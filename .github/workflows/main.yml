@@ -47,7 +47,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Testes Unitários
-      run: mvn -B --file pom.xml
+      run: mvn -B test --file pom.xml
   push-image:
     name: Enviando Imagem para DockerHub
     needs: tests
